@@ -20,18 +20,18 @@ from alluka.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-Hi {}, my name is αℓℓυкα (アルカ゠ゾルディック, Aruka Zorudikku)! 
-I'm the second youngest child of Silva and Kikyo Zoldyck. Under unknown circumstances, I was possessed by a mysterious Dark Continent creature, My family named Nanika.. 
+Hi {}, my name is Alexandra 
+ I've created to manage [this pretty Movie group 😊](https://t.me/movielinks_only)
 
-𝕴𝖋 𝖞𝖔𝖚'𝖗𝖊 𝖓𝖎𝖈𝖊 𝖙𝖔 𝖒𝖊, 𝖞𝖔𝖚 𝖍𝖆𝖛𝖊 𝖙𝖔 𝖇𝖊 𝖓𝖎𝖈𝖊 𝖙𝖔 𝕹𝖆𝖓𝖎𝖐𝖆 𝖙𝖔𝖔!! 𝕴𝖋 𝖞𝖔𝖚'𝖗𝖊 𝖌𝖔𝖎𝖓𝖌 𝖙𝖔 𝖕𝖗𝖔𝖙𝖊𝖈𝖙 𝖒𝖊, 𝖞𝖔𝖚 𝖍𝖆𝖛𝖊 𝖙𝖔 𝖕𝖗𝖔𝖙𝖊𝖈𝖙 𝕹𝖆𝖓𝖎𝖐𝖆 𝖙𝖔𝖔!! 𝕭𝖚𝖙 𝖎𝖋 𝖞𝖔𝖚'𝖗𝖊 𝖌𝖔𝖎𝖓𝖌 𝖙𝖔 𝖇𝖊 𝖒𝖊𝖆𝖓 𝖙𝖔 𝕹𝖆𝖓𝖎𝖐𝖆, 𝕴 𝖍𝖆𝖙𝖊 𝖞𝖔𝖚!!!"""
+
 
 
 
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
-the things I can help you with.
+I'm a modular group management bot with a few fun extras!
+
 
 *Main* commands available:
  - /start: start the bot
@@ -46,11 +46,7 @@ the things I can help you with.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for my creator to get me to where I am now, and every donation helps \
-motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
-(see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/anilchauhanxda)"""
+DONATE_STRING = """I'm glad to hear that you want to donate me but i don't want it if you want to help me then just support [my movie group](https://t.me/movielinks_only) that's enough!"""	
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -65,7 +61,7 @@ USER_SETTINGS = {}
 
 GDPR = []
 
-img = "https://telegra.ph/file/1ca41b5335290524eee7d.jpg"
+img = "https://telegra.ph/file/848c5dc7531332a1c6507.jpg"
 
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("alluka.modules." + module_name)
@@ -146,13 +142,13 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(img,PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="❓ Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text=" 👥 Support Chat.",url="https://telegram.dog/allukatm")],  
-                                                [InlineKeyboardButton(text=" Add in your Group",url="http://t.me/zoldycktmbot?startgroup=true"),InlineKeyboardButton(text="Website",url="meanii.me")]]))
+                                                [[InlineKeyboardButton(text="❓ Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text=" 👥 Support group.",url="https://t.me/movielinks_only")],  
+                                                [InlineKeyboardButton(text=" Add in your Group",url="http://t.me/queen_re_bornbot?startgroup=true"),InlineKeyboardButton(text="My owner😊",url="https://t.me/tHe_GaMeR_B0Y")]]))
     else:
          
 
         update.effective_message.reply_text("Heya, How can I help you? 🙂",reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="❓ Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text=" ✉️ Public Feeds",url="https://telegram.dog/allukatm")]]))
+                                                [[InlineKeyboardButton(text="❓ Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text=" 📝feedback",url="https://t.me/tHe_GaMeR_B0Y")]]))
                                             
         
 
@@ -247,8 +243,8 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="Help",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="Join our support chat.",url="https://telegram.dog/allukatm")],
-                                                [InlineKeyboardButton(text="You want to try my userbot vesion 😄",url="https://telegram.dog/allukabot")]]))
+                                                [InlineKeyboardButton(text="Join our group.",url="https://t.me/movielinks_only")],
+                                                [InlineKeyboardButton(text="contact my owner😊",url="https://t.me/tHe_GaMeR_B0Y")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
