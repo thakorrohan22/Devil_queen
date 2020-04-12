@@ -34,7 +34,7 @@ def feedback(bot: Bot, update: Update):
 
 __help__ = """
  - /feedback : You can give us your feedbacks 
-                you can't see your feeds it'll be stored @tHe_GaMeR_B0Y here.
+                you can't see your feeds it'll be stored  here.
 """
 
 __mod_name__ = "feedback"
