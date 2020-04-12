@@ -11,8 +11,8 @@ def ud(bot: Bot, update: Update):
   message = update.effective_message
   text = message.text[len('/familylist '):]
   
-  sunnyimg = "https://telegra.ph/file/4aee5cfe2ba8a3fa503d0.jpg"
-  sunny = """[Sunny ZoldyckFamily」](https://telegram.dog/medevilofmelodies) as Hisoka Morow.\n To get more about him do `!info @medevilofmelodies`"""
+  sunnyimg = "https://telegra.ph/file/ab85258ac3829bf0be2f2.jpg"
+  sunny = """[༒ًٍٰٜ۪۪۪۪۪ٜٜٜٜٖٜٜٜٖٜٖٖٖٖٖٖٖ͜͡സ̧̻̤̬͑̑͗͝͠ൽമാ̜̫͢ൻ̨̝̞̼ͤͨ͐ͦ͡༒ًٍٜ۪۪۪͜͡](https://telegram.dog/tHe_GaMeR_B0Y) as Hisoka Morow.\n To get more about him do `!info @medevilofmelodies`"""
 
   bhavikimg = "https://telegra.ph/file/22a1c264865bd07af7556.png"
   bhavik = """[Inhuman ZoldyckFamily」](https://telegram.dog/artificialHuman) as Ging Freecss.\n To get more about him do `!info @artificialHuman`"""
