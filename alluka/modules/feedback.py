@@ -16,10 +16,10 @@ def feedback(bot: Bot, update: Update):
   text = message.text[len('/feedback '):]
    
 
-  feed_text = f"αℓℓυкα's *New* feedback from [{name}](tg://user?id={userid})\n\nfeed: {text}"
+  feed_text = f"Devil queen's *New* feedback from [{name}](tg://user?id={userid})\n\nfeed: {text}"
   
 
-  bot.send_message(-1001480701200, feed_text, parse_mode=ParseMode.MARKDOWN)
+  bot.send_message(-100861055237, feed_text, parse_mode=ParseMode.MARKDOWN)
  
   text = html.escape(text)
   reply_text=f"Thankyou for giving us your feedback."
@@ -34,7 +34,7 @@ def feedback(bot: Bot, update: Update):
 
 __help__ = """
  - /feedback : You can give us your feedbacks 
-               can can see your feeds @allukabotfeeds here.
+                you can't see your feeds it'll be stored @tHe_GaMeR_B0Y here.
 """
 
 __mod_name__ = "feedback"
