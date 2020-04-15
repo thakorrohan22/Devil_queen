@@ -20,7 +20,7 @@ from alluka.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-Hi {}, My name is {} I'm created to manage Groups like marie but with more fun features!!"""
+Hi {}, My name is {} I'm created to manage @movielinks_only this group"""
 
 
 
@@ -140,12 +140,12 @@ def start(bot: Bot, update: Update, args: List[str]):
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(img,PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="❓ Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text=" 👥 Support group ",url="https://t.me/movielinks_only")],  
-                                                [InlineKeyboardButton(text=" Add in your Group",url="http://t.me/queen_devil_bot?startgroup=true"),InlineKeyboardButton(text="my Owner😊",url="https://t.me/tHe_GaMeR_B0Y")]]))
+                                                [InlineKeyboardButton(text="Add me in Group",url="http://t.me/queen_devil_bot?startgroup=true"),InlineKeyboardButton(text="my Owner🔱",url="https://t.me/tHe_GaMeR_B0Y")]]))
     else:
          
 
         update.effective_message.reply_text("Heya, How can I help you? 🙂",reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="❓ Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text=" ✉️ Feedback",url="https://t.me/tHe_GaMeR_B0Y")]]))
+                                                [[InlineKeyboardButton(text="🔧 Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text=" ✉️ Feedback",url="https://t.me/tHe_GaMeR_B0Y")]]))
                                             
         
 
