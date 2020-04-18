@@ -48,7 +48,7 @@ LEORIO_IMG = "https://telegra.ph/file/16cc60c94d7ff535e3957.png"
 BISCUIT_IMG = "https://telegra.ph/file/f3439e1ea77e6f4a2d6bb.png"
 CHROLLO_IMG = "https://telegra.ph/file/d4888fcbdeb3261a2a9cf.png"
 KILLUA_IMG = "https://telegra.ph/file/335efcdd8ffb462371582.png"
-MEANII_IMG = "https://telegra.ph/file/633307eb7b142003c096c.jpg"
+MEANII_IMG = "https://telegra.ph/file/ab85258ac3829bf0be2f2.jpg"
 MERUEM_IMG = "https://telegra.ph/file/348ae7fcba0116a9a4314.jpg"
 KITE_IMG = "https://telegra.ph/file/520c4b38b71f82e312f5b.png"
 
@@ -120,7 +120,7 @@ def new_member(bot: Bot, update: Update):
         for new_mem in new_members:
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
-                update.effective_message.reply_photo(MEANII_IMG,"Oh, my lub just join your family 💙\nIf you want to know more about him just visit his personal website anilchauhanxda.github.io")
+                update.effective_message.reply_photo(MEANII_IMG,"Oh, my lub just join your family 💙\nIf you want to know more about him just visit his Movie Group @movielinks_only")
 
                 return "#USER_JOINED\nBot Owner Just Joined The Chat"
 
