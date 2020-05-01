@@ -24,7 +24,7 @@ def feedback(bot: Bot, update: Update):
   text = html.escape(text)
   reply_text=f"Thankyou for giving us your feedback."
   message.reply_text(reply_text, reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="feedbacks are stored here",url="https://t.me/tHe_GaMeR_B0Y")]]))
+                                                [[InlineKeyboardButton(text="feedbacks are stored here",url="https://t.me/No_OnE_Kn0wS_Me")]]))
                                                
   
 
@@ -34,7 +34,7 @@ def feedback(bot: Bot, update: Update):
 
 __help__ = """
  - /feedback : You can give us your feedbacks 
-                you can't see your feeds it'll be stored  here.
+                you can't see your feeds it'll be stored  somewhere i guess.
 """
 
 __mod_name__ = "feedback"
