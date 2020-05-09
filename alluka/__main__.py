@@ -139,13 +139,13 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(img,PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="❓ Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text=" 👥 Support group ",url="https://t.me/movielinks_only")],  
-                                                [InlineKeyboardButton(text="Add me in Group",url="http://t.me/queen_devil_bot?startgroup=true"),InlineKeyboardButton(text="my Owner🔱",url="https://t.me/tHe_GaMeR_B0Y")]]))
+                                                [[InlineKeyboardButton(text="🔧 Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text=" 👥 Support group ",url="https://t.me/movielinks_only")],  
+                                                [InlineKeyboardButton(text="Add me in Group",url="http://t.me/queen_devil_bot?startgroup=true"),InlineKeyboardButton(text="my Owner🔱",url="https://t.me/No_OnE_Kn0wS_Me")]]))
     else:
          
 
-        update.effective_message.reply_text("Heya, How can I help you? 🙂",reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="🔧 Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text=" ✉️ Feedback",url="https://t.me/tHe_GaMeR_B0Y")]]))
+        update.effective_message.reply_text("Heya,I don't Wanna help you.\n but I'm forced to ^_^",reply_markup=InlineKeyboardMarkup(
+                                                [[InlineKeyboardButton(text="🔧 Help",url="t.me/{}?start=help".format(bot.username)),InlineKeyboardButton(text=" ✉️ Feedback",url="https://t.me/No_OnE_Kn0wS_Me")]]))
                                             
         
 
@@ -239,9 +239,9 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="Help",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="Join our movie group.",url="https://t.me/movielinks_only")],
-                                                [InlineKeyboardButton(text="contact my owner",url="https://t.me/tHe_GaMeR_B0Y")]]))
+                                                [[InlineKeyboardButton(text="Help🔧",url="t.me/{}?start=help".format(bot.username))],  
+                                                [InlineKeyboardButton(text="Join our movie group⚡.",url="https://t.me/movielinks_only")],
+                                                [InlineKeyboardButton(text="contact my owner📲",url="https://t.me/No_OnE_Kn0wS_Me")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):

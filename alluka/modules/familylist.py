@@ -12,7 +12,7 @@ def ud(bot: Bot, update: Update):
   text = message.text[len('/familylist '):]
   
   sunnyimg = "https://telegra.ph/file/ab85258ac3829bf0be2f2.jpg"
-  sunny = """[༒ًٍٰٜ۪۪۪۪۪ٜٜٜٜٖٜٜٜٖٜٖٖٖٖٖٖٖ͜͡സ̧̻̤̬͑̑͗͝͠ൽമാ̜̫͢ൻ̨̝̞̼ͤͨ͐ͦ͡༒ًٍٜ۪۪۪͜͡](https://telegram.dog/tHe_GaMeR_B0Y) He is ma owner check this`!info @tHe_GaMeR_B0Y`To know more about Him"""
+  sunny = """[༒ًٍٰٜ۪۪۪۪۪ٜٜٜٜٖٜٜٜٖٜٖٖٖٖٖٖٖ͜͡സ̧̻̤̬͑̑͗͝͠ൽമാ̜̫͢ൻ̨̝̞̼ͤͨ͐ͦ͡༒ًٍٜ۪۪۪͜͡](https://telegram.dog/No_OnE_Kn0wS_Me) He is ma owner check `!info @tHe_GaMeR_B0Y`To know more about Him"""
 
   bhavikimg = "https://telegra.ph/file/848c5dc7531332a1c6507.jpg"
   bhavik = """[DeViL QuEeN](https://telegram.dog/queen_devil_bot) uff it's me i guess👸"""
