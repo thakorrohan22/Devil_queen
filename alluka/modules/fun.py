@@ -1,18 +1,19 @@
-import html
-import random
-import time
+  
+import random, re
+import requests as r
 
-from typing import List
+from telegram import Bot, User, ParseMode, MessageEntity, TelegramError, MAX_MESSAGE_LENGTH
+from telegram.ext import Filters, CommandHandler, run_async
+from telegram.error import BadRequest
+from telegram.utils.helpers import mention_html, escape_markdown
 
-from telegram import Bot, Update, ParseMode
-from telegram.ext import CommandHandler, run_async
-
-import alluka.modules.fun_strings as fun_strings
-
-from alluka import dispatcher
-from alluka.modules.disable import DisableAbleCommandHandler
-from alluka.modules.helper_funcs.chat_status import is_user_admin
 from alluka.modules.helper_funcs.extraction import extract_user
+from alluka.modules.helper_funcs.filters import CustomFilters
+from alluka.modules.helper_funcs.alternate import typing_action
+from alluka import dispatcher, SUDO_USERS, SUPPORT_USERS, WALL_API, TOKEN, LOGGER
+from alluka.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+
+import alluka.modules.helper_funcs.fun_strings
 
 
 @run_async
@@ -114,9 +115,12 @@ def rlg(bot: Bot, update: Update):
 
 
 @run_async
-def decide(bot: Bot, update: Update):
-    reply_text = update.effective_message.reply_to_message.reply_text if update.effective_message.reply_to_message else update.effective_message.reply_text
-    reply_text(random.choice(fun_strings.DECIDE))
+@typing_action
+def decide(update, context):
+    args = update.effective_message.text.split(None, 1)
+    if len(args) >= 2: # Don't reply if no args
+       reply_text = update.effective_message.reply_to_message.reply_text if update.effective_message.reply_to_message else update.effective_message.reply_text
+       reply_text(random.choice(fun_strings.DECIDE))
 
     
 @run_async
